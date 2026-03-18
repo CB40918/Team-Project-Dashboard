@@ -2,9 +2,32 @@
 <html>
 <head>
     <title>My Dashboard</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+        .alert-box { background-color: #ffcccc; border: 2px solid #cc0000; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        .chart-container { border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #f9f9f9; }
+        .bar { display: inline-block; width: 40px; margin-right: 10px; background-color: #3498db; vertical-align: bottom; text-align: center; color: white; font-size: 12px; }
+    </style>
 </head>
 <body>
     <h1>Team Project Dashboard</h1>
     <p>This is my assigned feature: The Dashboard.</p>
+
+    <hr>
+
+    <div class="alert-box">
+        <h2 style="color: #cc0000; margin-top: 0;">⚠️ DROUGHT ALERT</h2>
+        <p><strong>Status:</strong> Active - Stage 2 Water Restrictions in effect for this region.</p>
+    </div>
+
+    <div class="chart-container">
+        <h3>Monthly Rainfall Trends (mm)</h3>
+        <p>Data visualization for the last 4 months:</p>
+        
+        <div style="height: 150px; display: flex; align-items: flex-end;">
+            <div class="bar" style="height: 120px;">120</div> <div class="bar" style="height: 80px;">80</div>   <div class="bar" style="height: 45px; background-color: #e74c3c;">45</div> <div class="bar" style="height: 60px;">60</div>   </div>
+        <p><small>Jan | Feb | Mar | Apr</small></p>
+    </div>
+
 </body>
 </html>
